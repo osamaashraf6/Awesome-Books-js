@@ -27,7 +27,6 @@
 ## Live Demo
 
 
-[Portfolio]( https://osamaashraf6.github.io/portfolio/)
 
 
 ## Getting Started
