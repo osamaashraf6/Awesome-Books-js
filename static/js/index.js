@@ -3,18 +3,22 @@ const addButton = document.querySelector('#addButton');
 const form = document.querySelector('form');
 const booksContainer = document.querySelector('.books-container')
 
+const showBook = (item) => {
+  const bookContent = document.createElement('div');
+  const text = `
+    <p class="book-title">${item.title}</p>
+    <p class="book-author">${item.author}</p>
+    <button type="button" id="book-${item.id}">Remove</button>
+    <hr>
+  `
+  bookContent.innerHTML=text;
+  booksContainer.appendChild(bookContent);
+}
+
 const getData = ()=>{
-  //booksContainer.innerHTML='';
+  booksContainer.innerHTML='';
   books.forEach((book, index) => {
-    const bookContent = document.createElement('div');
-    const text = `
-      <p class="book-title">${book.title}</p>
-      <p class="book-author">${book.author}</p>
-      <button type="button" id="book-${book.id}">Remove</button>
-      <hr>
-    `
-    bookContent.innerHTML=text;
-    booksContainer.appendChild(bookContent);
+    showBook(book);
   })
 }
 form.addEventListener('submit',(e)=>{
@@ -27,10 +31,11 @@ form.addEventListener('submit',(e)=>{
   }
   books.push(data);
   localStorage.setItem('data', JSON.stringify(books));
+  showBook(data);
   title.value='';
   author.value='';
   console.log('books',books)
-  getData();
+  
 })
 getData();
 
