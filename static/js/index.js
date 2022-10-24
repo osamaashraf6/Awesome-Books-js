@@ -2,7 +2,7 @@ const books = JSON.parse(localStorage.getItem('data')) || [];
 const addButton = document.querySelector('#addButton');
 const form = document.querySelector('form');
 const booksContainer = document.querySelector('.books-container')
-
+//showBook function
 const showBook = (item) => {
   const bookContent = document.createElement('div');
   const text = `
