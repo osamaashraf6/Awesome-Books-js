@@ -1,22 +1,21 @@
 const books = JSON.parse(localStorage.getItem('data')) || [];
 const form = document.querySelector('form');
 const booksContainer = document.querySelector('.books-container');
-// =============================================================================
+
 const getData = () => {
-  booksContainer.innerHTML = '';
+  // booksContainer.innerHTML='';
   books.forEach((book) => {
     const bookContent = document.createElement('div');
     const text = `
       <p class="book-title">${book.title}</p>
       <p class="book-author">${book.author}</p>
-      <button  type="button">Remove</button>
+      <button type="button" id="book-${book.id}">Remove</button>
       <hr>
     `;
     bookContent.innerHTML = text;
     booksContainer.appendChild(bookContent);
   });
 };
-// =============================================================================
 form.addEventListener('submit', (e) => {
   e.preventDefault();
   const { title, author } = e.target;
@@ -31,5 +30,4 @@ form.addEventListener('submit', (e) => {
   author.value = '';
   getData();
 });
-// =============================================================================
 getData();
