@@ -3,8 +3,11 @@
 # Awesome books
 
 
-> This branch (awesome__books) We did it by contributing with my coding partner we did in this branch the followings 👌 :
-
+> This branch (books__classes) We did it by contributing with my coding partner we did in this branch the followings 👌 :
+- [x] Use JavaScript classes instead of objects and arrays
+- [x] Create class methods to add and remove books
+- [x] Maintain all of the original functionality of the application
+- [x] Add CSS styles to the application
 - [x] Create a collection that keeps a list of book
 - [x] Create a function to add a new book to the collection, with title and author.
 - [x] Create a function to remove a book from the collection.💯
@@ -17,6 +20,8 @@
 ## Built With
 
 - HTML
+- CSS
+- JavaScript (classes)
 - Use gitHub pages
 - Use the javascript objects and arrays to store the data for every project.
 
