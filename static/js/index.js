@@ -59,13 +59,13 @@
 // getData();
 // // =================================================================================================
 // start class Awesome
-class Awesome {
-  constructor(title, author) {
-    this.title = title;
-    this.author = author;
-    this.addBtn = document.querySelector('#addButton');
-    this.addBtn.addEventListener('click', () => {
-      console.log('yes');
-    });
-  }
-}
+// class Awesome {
+//   constructor() {
+//     this.title = document.querySelector('#title');
+//     this.author = document.querySelector('#author');
+//     this.addBtn = document.querySelector('#addButton');
+//     this.addBtn.addEventListener('click', () => {
+//       console.log('yes');
+//     });
+//   }
+// }
