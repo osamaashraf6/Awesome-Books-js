@@ -1,1 +1,96 @@
-/* No style because we apply the low medium fidelity */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  gap: 28px;
+}
+
+main > h1 {
+  text-align: center;
+}
+
+.books-container {
+  width: 50%;
+  padding: 7px;
+  background-color: #acaeac3b;
+  margin: 0 auto 42px auto;
+  border-radius: 5px;
+  overflow-y: auto;
+}
+
+.books-container > div {
+  padding: 10px 20px;
+  color: darkblue;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.books-container > div:nth-child(odd) {
+  background-color: #fff;
+}
+
+.books-container > div > button {
+  border: 0;
+  outline: 0;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #f31616ed;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+
+.books-container > div > button:hover {
+  background-color: #b20505fc;
+}
+
+.books-form > form {
+  width: 30%;
+  padding: 20px;
+  background-color: #c2dc75;
+  margin: 0 auto;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.books-form > form > input[type="submit"] {
+  background-color: #2b5eb8;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+
+.books-form > form > input[type="submit"]:hover {
+  background-color: hsl(242deg 68% 35%);
+}
+
+hr {
+  width: 70%;
+  display: block;
+  margin-inline: auto;
+  margin-bottom: 15px;
+}
+
+.books-form > h2 {
+  text-align: center;
+  margin-bottom: 31px;
+}
+
+.books-form > form > input {
+  border: 0;
+  outline: 0;
+  border-radius: 2px;
+  padding: 10px;
+  margin-bottom: 15px;
+  width: 100%;
+}
