@@ -12,7 +12,7 @@ const showBook = (item) => {
     <p class="book-title">${item.title}</p>
     <p class="book-author">${item.author}</p>
     <button onclick="remove(${item.id})" type="button" id="book-${item.id}">Remove</button>
-    <hr>
+   
   `;
   bookContent.innerHTML = text;
   booksContainer.appendChild(bookContent);
