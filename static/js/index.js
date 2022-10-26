@@ -70,8 +70,8 @@ this.addBtn.addEventListener('click', (e) => {
   // eslint-disable-next-line no-use-before-define
   books.add(book);
   message.classList.remove('display');
-  document.getElementById('title').value='';
-  document.getElementById('author').value='';
+  document.getElementById('title').value = '';
+  document.getElementById('author').value = '';
 });
 
 const listLink = document.querySelector('#list');
@@ -81,30 +81,35 @@ const seeList = document.querySelector('#seeList');
 const sectionOne = document.querySelector('#sectionone');
 const sectionTwo = document.querySelector('#sectiontwo');
 const sectionThree = document.querySelector('#sectionthree');
+const close = document.querySelector('#close');
 const books = new Books();
 books.getData();
 
-listLink.addEventListener('click', (e)=>{
+listLink.addEventListener('click', () => {
   sectionOne.classList.remove('display');
   sectionTwo.classList.add('display');
   sectionThree.classList.add('display');
-})
-addNewLink.addEventListener('click', (e)=>{
+});
+addNewLink.addEventListener('click', () => {
   sectionOne.classList.add('display');
   sectionTwo.classList.remove('display');
   sectionThree.classList.add('display');
-})
-contactLink.addEventListener('click', (e)=>{
+});
+contactLink.addEventListener('click', () => {
   sectionOne.classList.add('display');
   sectionTwo.classList.add('display');
   sectionThree.classList.remove('display');
-})
-seeList.addEventListener('click', ()=>{
+});
+seeList.addEventListener('click', () => {
   sectionOne.classList.remove('display');
   sectionTwo.classList.add('display');
   sectionThree.classList.add('display');
-})
+  message.classList.add('display');
+});
 
 const time = document.querySelector('#timeText');
 const date = new Date();
-time.textContent= `Today is ${date.toDateString()}`;
+time.textContent = `Today is ${date.toDateString()}`;
+close.addEventListener('click', () => {
+  message.classList.add('display');
+});
