@@ -166,7 +166,8 @@ h1 {
   border: 2px solid green;
   box-shadow: 0 5px 10px #d1dcd1;
 }
-.message > button {
+
+#seeList {
   border: 0;
   outline: 0;
   background-color: #0c6fbb;
@@ -177,6 +178,7 @@ h1 {
   cursor: pointer;
   margin-left: 8px;
 }
+
 #close {
   display: block;
   font-size: 21px;
@@ -189,6 +191,7 @@ h1 {
   line-height: 22px;
   margin-left: auto;
 }
+
 .books-form > h2 {
   text-align: center;
   margin-bottom: 31px;
