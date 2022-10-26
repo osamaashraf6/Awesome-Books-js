@@ -155,13 +155,40 @@ h1 {
   background-color: hsl(242deg 68% 35%);
 }
 
-hr {
-  width: 70%;
-  display: block;
-  margin-inline: auto;
-  margin-bottom: 15px;
+.message {
+  padding: 9px;
+  width: 30%;
+  margin: auto;
+  border-radius: 5px;
+  margin-bottom: 26px;
+  display: flex;
+  align-items: center;
+  border: 2px solid green;
+  box-shadow: 0 5px 10px #d1dcd1;
 }
-
+.message > button {
+  border: 0;
+  outline: 0;
+  background-color: #0c6fbb;
+  padding: 7px;
+  border-radius: 5px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  margin-left: 8px;
+}
+#close {
+  display: block;
+  font-size: 21px;
+  cursor: pointer;
+  background-color: #ddd;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  text-align: center;
+  line-height: 22px;
+  margin-left: auto;
+}
 .books-form > h2 {
   text-align: center;
   margin-bottom: 31px;
