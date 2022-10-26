@@ -6,6 +6,7 @@
 
 body {
   font-family: "Circular-Loom", sans-serif;
+  position: relative;
 }
 
 .container {
@@ -86,7 +87,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 76vh;
+  height: 86.4vh;
   gap: 28px;
 }
 
@@ -199,6 +200,9 @@ footer {
   text-align: center;
   font-size: 15px;
   letter-spacing: 1px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 /* end footer */

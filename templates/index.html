@@ -18,9 +18,9 @@
             <a href="#">Awesome Books</a>
           </div>
           <ul class="nav__container__parnav__ul">
-            <li><a href="#">List</a></li>
-            <li><a href="#">Add new</a></li>
-            <li><a href="#">Contact</a></li>
+            <li id="list"><a href="#">List</a></li>
+            <li id="addNew"><a href="#">Add new</a></li>
+            <li id="contact"><a href="#">Contact</a></li>
           </ul>
         </div>
       </div>
@@ -29,7 +29,7 @@
     <!-- start time -->
     <div class="time">
       <div class="container">
-        <p>octoper, 26th, 2022</p>
+        <p id="timeText">octoper, 26th, 2022</p>
       </div>
     </div>
     <!-- end time -->
@@ -45,6 +45,7 @@
       <section class="sectiontwo display" id="sectiontwo">
         <div class="books-form">
           <h1>Add a new book</h1>
+          <p class="message display">Item added successfully, <button type="button" id="seeList">click here to see</button></p>
           <form action="">
             <input type="text" name="title" id="title" placeholder="Title" />
             <br />

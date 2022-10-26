@@ -60,6 +60,7 @@ class Books {
   }
 }
 
+const message = document.querySelector('.message');
 this.addBtn = document.querySelector('#addButton');
 this.addBtn.addEventListener('click', (e) => {
   e.preventDefault();
@@ -68,7 +69,42 @@ this.addBtn.addEventListener('click', (e) => {
   book.author = document.getElementById('author').value;
   // eslint-disable-next-line no-use-before-define
   books.add(book);
+  message.classList.remove('display');
+  document.getElementById('title').value='';
+  document.getElementById('author').value='';
 });
 
+const listLink = document.querySelector('#list');
+const addNewLink = document.querySelector('#addNew');
+const contactLink = document.querySelector('#contact');
+const seeList = document.querySelector('#seeList');
+const sectionOne = document.querySelector('#sectionone');
+const sectionTwo = document.querySelector('#sectiontwo');
+const sectionThree = document.querySelector('#sectionthree');
 const books = new Books();
 books.getData();
+
+listLink.addEventListener('click', (e)=>{
+  sectionOne.classList.remove('display');
+  sectionTwo.classList.add('display');
+  sectionThree.classList.add('display');
+})
+addNewLink.addEventListener('click', (e)=>{
+  sectionOne.classList.add('display');
+  sectionTwo.classList.remove('display');
+  sectionThree.classList.add('display');
+})
+contactLink.addEventListener('click', (e)=>{
+  sectionOne.classList.add('display');
+  sectionTwo.classList.add('display');
+  sectionThree.classList.remove('display');
+})
+seeList.addEventListener('click', ()=>{
+  sectionOne.classList.remove('display');
+  sectionTwo.classList.add('display');
+  sectionThree.classList.add('display');
+})
+
+const time = document.querySelector('#timeText');
+const date = new Date();
+time.textContent= `Today is ${date.toDateString()}`;
