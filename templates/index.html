@@ -36,7 +36,7 @@
     <!-- start main -->
     <main>
       <!-- start section one -->
-      <section class="sectionone " id="sectionone">
+      <section class="sectionone" id="sectionone">
         <h1>Awesome Books</h1>
         <div class="books-container"></div>
       </section>
@@ -45,7 +45,11 @@
       <section class="sectiontwo display" id="sectiontwo">
         <div class="books-form">
           <h1>Add a new book</h1>
-          <p class="message display">Item added successfully, <button type="button" id="seeList">click here to see</button></p>
+          <p class="message display">
+            Item added successfully,
+            <button type="button" id="seeList">click here to see</button
+            ><span id="close">&times;</span>
+          </p>
           <form action="">
             <input type="text" name="title" id="title" placeholder="Title" />
             <br />
