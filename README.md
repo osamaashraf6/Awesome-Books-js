@@ -3,7 +3,10 @@
 # Awesome books
 
 
-> This branch (books__classes) We did it by contributing with my coding partner we did in this branch the followings 👌 :
+> This branch (navigation) We did it by contributing with my coding partner we did in this branch the followings 👌 :
+- [x] Add the Navigation bar.
+- [x] Add Three content sections (a. Books list.)(b. Add book form.)(c. Contact info.)
+- [x]  when you click on any of the links, the main area changes to display only one of the three content sections
 - [x] Use JavaScript classes instead of objects and arrays
 - [x] Create class methods to add and remove books
 - [x] Maintain all of the original functionality of the application
@@ -21,6 +24,7 @@
 
 - HTML
 - CSS
+- Flexbox
 - JavaScript (classes)
 - Use gitHub pages
 - Use the javascript objects and arrays to store the data for every project.
